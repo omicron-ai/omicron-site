@@ -3,23 +3,43 @@
 # If a command fails then the deploy stops
 set -e
 
-printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
+printf "\033[0;32mDeploying public updates to GitHub...\033[0m\n"
 
 # Build the project.
-hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
+hugo # if using a theme, replace with `hugo -t <THEME>`
 
 # Go To Public folder
 cd public
 
-# Add changes to git.
+# Add public changes to git.
 git add .
 
-# Commit changes.
+# Commit public changes.
 msg="rebuilding site $(date)"
 if [ -n "$*" ]; then
     msg="$*"
 fi
 git commit -m "$msg"
 
-# Push source and build repos.
+# Push public source and build repos.
 git push origin master
+
+# --------------------------------------------- #
+
+printf "\033[0;32mDeploying site change updates to GitHub...\033[0m\n"
+
+# Go to root folder
+cd ..
+
+git add .
+
+# Commit site changes.
+msg="site updates - $(date)"
+if [ -n "$*" ]; then
+    msg="$*"
+fi
+git commit -m "$msg"
+
+# Push site source and build repos
+git push origin master
+

@@ -1,4 +1,4 @@
-baseURL = "https://omicron-ai.dev"
+baseURL = "https://omicron-ai.org"
 languageCode = "en-us"
 title = "Omicron AI"
 themesDir = "themes"
@@ -18,14 +18,14 @@ summaryLength = 30
     weight = 1
 
 [[menu.main]]
-    name = "Docs"
-    url = "/docs/"
+    name = "Info"
+    url = "/info/"
     weight = 2
 
 [params]
   google_analytics_id=""
-  homepage_button_link = '/docs'
-  homepage_button_text = 'read the docs'
+  homepage_button_link = '/info'
+  homepage_button_text = 'read about Omicron'
   homepage_intro = 'Omicron is a minimal framework for the development of intelligent agents.'
   homepage_image = '/images/logo_wide_av.svg'
 
@@ -36,7 +36,7 @@ summaryLength = 30
     meta_description = "Omicron is a minimal framework for the development of intelligent agents."
     meta_og_title = "Omicron"
     meta_og_type = "website"
-    meta_og_url = "https://omicron-ai.dev"
+    meta_og_url = "https://omicron-ai.org"
     meta_og_image = "/images/gallery-1.png"
     meta_og_description = "Omicron is a minimal framework for the development of intelligent agents."
     meta_twitter_card = "summary"
