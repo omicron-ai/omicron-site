@@ -14,5 +14,4 @@ This site is still a work in progress and will continually be updated. This is w
 The following projects are part of the Omicron Framework: 
   - **Omicron** - an agent development library
   - **Omnigraph** - an agent memory graph
-  - **Delta Protocol** - a protocol for the sharing and access of data among services
-
+  - **Delta Protocol** - a flexible protocol for the sharing and access of data among networked services

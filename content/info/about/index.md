@@ -1,7 +1,7 @@
 ---
 title: 'About'
 date: 2020-05-24T15:14:39+10:00
-weight: 5
+weight: 4
 ---
 
 Omicron is the brainchild of [Ivan Leon](https://www.ivanleon.net). 

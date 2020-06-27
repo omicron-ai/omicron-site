@@ -8,4 +8,4 @@ Rather than focusing on building a single-domain task solver, Omicron agents pro
 
 The agents memory and agenda are handled through built in InternalMechanisms as part of the core architecture, but can be extended or replaced by custom IntenalMechanism implementations. 
 
-
+More information coming soon. 
